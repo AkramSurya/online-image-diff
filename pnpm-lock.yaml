@@ -17,15 +17,6 @@ dependencies:
   '@mantine/notifications':
     specifier: ^6.0.20
     version: 6.0.20(@mantine/core@6.0.20)(@mantine/hooks@6.0.20)(react-dom@18.2.0)(react@18.2.0)
-  exif-js:
-    specifier: ^2.3.0
-    version: 2.3.0
-  exifr:
-    specifier: ^7.1.3
-    version: 7.1.3
-  exifreader:
-    specifier: ^4.13.0
-    version: 4.13.0
   patch-package:
     specifier: ^8.0.0
     version: 8.0.0
@@ -882,13 +873,6 @@ packages:
       - '@swc/helpers'
     dev: true
 
-  /@xmldom/xmldom@0.8.10:
-    resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
-    engines: {node: '>=10.0.0'}
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@yarnpkg/lockfile@1.1.0:
     resolution: {integrity: sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==}
     dev: false
@@ -1544,21 +1528,6 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /exif-js@2.3.0:
-    resolution: {integrity: sha512-1Og9pAzG2FZRVlaavH8bB8BTeHcjMdJhKmeQITkX+uLRCD0xPtKAdZ2clZmQdJ56p9adXtJ8+jwrGp/4505lYg==}
-    dev: false
-
-  /exifr@7.1.3:
-    resolution: {integrity: sha512-g/aje2noHivrRSLbAUtBPWFbxKdKhgj/xr1vATDdUXPOFYJlQ62Ft0oy+72V6XLIpDJfHs6gXLbBLAolqOXYRw==}
-    dev: false
-
-  /exifreader@4.13.0:
-    resolution: {integrity: sha512-IhJBpyXDLbCdgzVHkthadOvrMiZOR2XS7POVp0b5JoVfScRoCJ6YazZ+stTkbDTE5TRTP44bE5RKsujckAs45Q==}
-    requiresBuild: true
-    optionalDependencies:
-      '@xmldom/xmldom': 0.8.10
-    dev: false
 
   /fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
