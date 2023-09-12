@@ -1,0 +1,33 @@
+diff --git a/node_modules/resemblejs/resemble.js b/node_modules/resemblejs/resemble.js
+index 86fc074..08854de 100644
+--- a/node_modules/resemblejs/resemble.js
++++ b/node_modules/resemblejs/resemble.js
+@@ -296,8 +296,8 @@ var isNode = function () {
+             var hiddenCanvas = createCanvas(width, height);
+             var imageData;
+ 
+-            hiddenCanvas.getContext("2d").drawImage(hiddenImage, 0, 0, width, height);
+-            imageData = hiddenCanvas.getContext("2d").getImageData(0, 0, width, height);
++            hiddenCanvas.getContext("2d",{ colorSpace: "display-p3" }).drawImage(hiddenImage, 0, 0, width, height);
++            imageData = hiddenCanvas.getContext("2d",{ colorSpace: "display-p3" }).getImageData(0, 0, width, height);
+ 
+             images.push(imageData);
+ 
+@@ -552,7 +552,7 @@ var isNode = function () {
+             if (!compareOnly) {
+                 hiddenCanvas = createCanvas(width, height);
+ 
+-                context = hiddenCanvas.getContext("2d");
++                context = hiddenCanvas.getContext("2d",{ colorSpace: "display-p3" });
+                 imgd = context.createImageData(width, height);
+                 pix = imgd.data;
+             }
+@@ -732,7 +732,7 @@ var isNode = function () {
+ 
+             if (img.height < h || img.width < w) {
+                 c = createCanvas(w, h);
+-                context = c.getContext("2d");
++                context = c.getContext("2d",{ colorSpace: "display-p3" });
+                 context.putImageData(img, 0, 0);
+                 return context.getImageData(0, 0, w, h);
+             }
